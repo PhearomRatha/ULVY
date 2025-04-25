@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+  .id {
+    color: blueviolet;
+    font-size: 50px;
+    font-weight: bold;
+  }
+</style>
+<body>
+    <div id="hi" class="greeting">Hi i'm Ratha 🙌</div>
+
+    <script>// get text cotetent in html tag
+        function getTextContent(param){
+            const element = getTagById(param);
+            return text  = element.textContent;
+         }
+        
+        //  get element by id
+        function getTagById(params){
+            return element = document.getElementById(params)
+        }
+        
+        // //get element by class name
+        function getTagByClass(params){
+            return document.querySelector(params);
+        }
+        
+         //get class name in html tage 
+        function getClassName(params){
+            const element = getTagById(params);
+            const className = element.className;
+            return className;
+        }
+        
+        // get id in html tage 
+        function getID(params){
+            const element = document.querySelector(params);
+            return element.id;
+        
+        }
+        // get element by class name
+        
+        
+        
+        console.log(getTextContent('hi'));
+        console.log(getTagById('hi'));
+        console.log(getTagByClass('.greeting'));
+        console.log(getClassName('hi'));
+        console.log(getID('.greeting'));
+    </script>
+</body>
+</html>

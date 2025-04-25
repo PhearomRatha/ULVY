@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    /* Reset some default browser styles */
+body, h1, h3, p, svg {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main layout styling */
+main {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar styling */
+.left {
+    width: 300px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #e0e0e0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content area styling */
+.right {
+    flex-grow: 1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.right-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    max-width: 100%;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #f8f8f8;
+}
+
+.search > input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    outline: none;
+}
+
+.right-bottom-upload, .right-bottom-enter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    background-color: aqua;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px;
+}
+
+</style>
+<body>
+
+    <main>
+        <section class="left">
+            <!-- Left section content here -->
+        </section>
+        <section class="right">
+            <div class="right-container">
+                <h1>ChatGPT</h1>
+                <div class="right-bottom">
+                    <div class="search">
+                        <div class="right-bottom-upload">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 14 14">
+                                <path fill="black" fill-rule="evenodd" d="M7 14A7 7 0 1 0 7 0a7 7 0 0 0 0 14m3.146-8.31L7.353 2.895a.5.5 0 0 0-.707 0L3.854 5.69a.5.5 0 0 0 .353.854H6v3.707a1 1 0 0 0 2 0V6.543h1.793a.5.5 0 0 0 .353-.854Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <input type="text" placeholder="Message chat GPT">
+                        <div class="right-bottom-enter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 32 32">
+                                <path fill="black" d="M16 4c-4.12 0-7.36 3.13-7.813 7.125a4.895 4.895 0 0 0-3.843 3.22C1.884 15.054 0 17.248 0 20c0 3.324 2.676 6 6 6h20c3.324 0 6-2.676 6-6c0-1.76-.855-3.336-2.094-4.438c-.232-3.514-3.035-6.318-6.562-6.5C22.14 6.133 19.378 4 16 4m0 2c2.762 0 4.97 1.77 5.75 4.28l.22.72H23c2.755 0 5 2.245 5 5v.5l.406.313A4.07 4.07 0 0 1 30 20c0 2.276-1.724 4-4 4H6c-2.276 0-4-1.724-4-4c0-2.02 1.45-3.588 3.28-3.906l.657-.125l.125-.658C6.362 13.964 7.556 13 9 13h1v-1c0-3.37 2.63-6 6-6m0 5.594l-.72.687l-4 4l1.44 1.44L15 15.437V22h2v-6.563l2.28 2.282l1.44-1.44l-4-4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

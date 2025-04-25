@@ -1,0 +1,17 @@
+table{
+    /* border-collapse: collapse; */
+    width: 100%;
+    margin: auto;
+    /* background-color: aquamarine; */
+    /* text-align: center; */
+}
+th, td{
+    padding: 10px;
+}
+tr:nth-child(odd){
+    background-color: rgba(171, 176, 174, 0.073);
+}
+th{
+   text-align: start;
+    background-color: rgb(210, 210, 205);
+}

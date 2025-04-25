@@ -1,0 +1,67 @@
+
+body {
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 50%;
+    height: auto;
+    background-color: #d29b6c;
+    margin: auto;
+}
+header {
+   
+    text-align: center;
+    border-top: 5px dashed black;
+    padding: 10px 0;
+}
+header h1 {
+    font-size: 24px;
+}
+
+header h1:nth-child(odd) {
+    color: #0066cc;
+}
+
+header h1:nth-child(even) {
+    color: red;
+}
+.main {
+    padding: 20px;
+    text-align: left;
+    border-top: 2px solid black;
+    border-bottom: 5px dotted black;
+    position: relative;
+}
+
+.image-container {
+    float: left;
+    margin: 0 0 10px 10px;
+    border: 5px solid blue;
+    padding: 5px;
+}
+
+.image-container img {
+    max-width: 100px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0px;
+   
+}
+
+.footer1 {
+    margin: 20px 0px;
+   
+}
+
+.footer1:nth-child(odd) {
+    color: #0066cc;
+}
+
+.footer1:nth-child(even) {
+    color: red;
+}

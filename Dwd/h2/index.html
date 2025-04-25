@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            padding: 20px;
+        }
+
+        tbody > tr:nth-child(odd) {
+            padding: 5px;
+            color: aqua;
+            border-style: dotted;
+            border-width: 4px;
+            text-align: right;
+        
+        }
+
+        tbody > tr:nth-child(even) {
+            text-align: left;
+            color: rgb(26, 29, 29);
+            border-style: double;
+            border-width: 4px;
+        }
+
+        thead > tr:nth-child(odd) {
+            text-align:end;
+            border-width: 5px;
+            padding: 5px;
+            color: blue;
+            font-size: large;
+            border-style: dotted;
+        }
+    </style>
+</head>
+<body>
+
+<table border="1" style="width: 100%">
+    <thead>
+        <tr>
+            <th>Header1</th>
+            <th>Header2</th>
+            <th>Header3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Data1</td>
+            <td>Data2</td>
+            <td>Data3</td>
+        </tr>
+        <tr>
+            <td>Data1</td>
+            <td>Data2</td>
+            <td>Data3</td>
+        </tr>
+        <tr>
+            <td>Data1</td>
+            <td>Data2</td>
+            <td>Data3</td>
+        </tr>
+        <tr>
+            <td>Data1</td>
+            <td>Data2</td>
+            <td>Data3</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

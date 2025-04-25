@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.bg {
+    background-image: url("/cute.jpg");
+    background-repeat: repeat; 
+    background-size: contain; 
+    height: 300px;
+}
+
+.bg h1 {
+
+    margin: 0;
+    padding: 70px 0;
+    font-size: 5em;
+    color: rgb(4, 4, 31);
+}
+
+h1 {
+    color: rgb(163, 165, 41);
+    
+}
+h1#h1 {
+    color: rgb(74, 220, 220); 
+    margin-top: 50px;
+}
+p {
+    color: rgba(0, 0, 0, 0.647); 
+}
+
+b {
+    color: darkblue; 
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="../JS/implement.js"></script>
+</head>
+<style>
+   
+     button{
+        
+        background-color: rgb(81, 0, 255);
+     }
+     span{
+        display: none;
+     }
+</style>
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="" placeholder="Name" >
+        <span id="Validname">(Name must not be empty)</span><br>
+        <label for="name">Gender:</label>
+        <input type="text" id="gender" name="" placeholder="Gender" >
+        <span id="validgendr">(Gender must not be empty)</span><br>
+        <button onclick="checkValidation(event)">Submit</button>
+    </form>
+</body>
+</html>

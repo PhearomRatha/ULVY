@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <script defer src="../JS/Exerciseform.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0e0e0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            width: 100%;
+            max-width: 400px; 
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            color: white;
+            text-align: center;
+            
+        }
+
+        form h2 {
+            margin-bottom: 30px;
+            font-size: 1.5em;
+            color: #fff;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        input {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin-bottom: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            background-color: #fff;
+            color: #333;
+        }
+
+        button {
+            width: 45%;
+            padding: 12px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #00c853;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #007f3c;
+        }
+
+        button[type="reset"] {
+            background-color: #ff5252;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #d50000;
+        }
+    </style>
+</head>
+<body>
+    <form id="userForm">
+        <h2>Create Your Account</h2>
+
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" placeholder="First name">
+        
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" placeholder="Last name">
+        
+        <label for="emailUser">Email</label>
+        <input type="email" id="emailUser" placeholder="Email">
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password">
+        
+        <button type="submit" onclick="submitForm(event)">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+</html>

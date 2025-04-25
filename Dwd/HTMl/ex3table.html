@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        tfoot td {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <table>
+      <thead>
+        <tr>
+            <th>NAME</th>
+            <th>YEAR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Jan</td>
+            <td>2005</td>
+        </tr>
+        <tr>
+            <td>Feb</td>
+            <td>2006</td>
+        </tr>
+        <tr>
+            <td>Mar</td>
+            <td>2007</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+            <td>Total Entries</td>
+            <td>3</td>
+        </tr>
+      </tfoot>
+    </table>
+</body>
+</html>

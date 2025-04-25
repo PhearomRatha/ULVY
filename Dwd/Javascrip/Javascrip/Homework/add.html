@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <script defer src="../Homework/add.js"></script>
+    <style>
+        ul { 
+            list-style-type: none; 
+            padding: 0;
+         }
+        li { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-bottom: 5px; 
+        }
+        button { 
+            background-color: red; 
+            color: white; 
+            border: none; 
+            padding: 5px; 
+            cursor: pointer;
+         }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <input type="text" id="addBookInput" placeholder="Add a book...">
+        <button type="button" onclick="AddBook()">+ Add</button>
+        
+        <h2>Books to read</h2>
+        <ul id="bookList"></ul>
+        
+        <h3>Summary</h3>
+        <p>Number of books: <span id="bookCount">0</span></p>
+        <p>Book titles: <span id="bookTitles">None</span></p>
+    </div>
+    
+</body>
+</html>

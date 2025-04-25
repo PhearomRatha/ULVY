@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Demo App</title> 
+    <script defer src="../Homework/TodoList.js"></script> 
+</head>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    button {
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: red;
+    }
+    
+    #addTaskButton {
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #addTaskButton:hover {
+        background-color: #0056b3;
+    }
+    
+</style>
+<body>
+    <h1>Todo List Demo App</h1>
+    <p>Do it now.</p>
+    <button id="addTaskButton">Add Task</button>
+    <table id="todoTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Task Name</th>
+                <th>Status</th>
+                <th>Edit</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody id="todoListBody">
+           
+        </tbody>
+    </table>
+</body>
+</html>

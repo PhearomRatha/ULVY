@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center-top {
+            top: 50px;
+            position: fixed;
+            background: red;
+            width: 100%;
+            z-index: 9999;
+            height: 80px;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .top {
+            width: 80%;
+            display: flex;
+            justify-content: space-between; /* Adjust this to space-between */
+        }
+        .top-child {
+            overflow-x: auto;
+            white-space: nowrap;
+            display: flex;
+            width: 100%;
+        }
+        .top-child::-webkit-scrollbar {
+            display: none;
+        }
+        .top-child p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            color: #333;
+            text-align: center;
+            cursor: pointer;
+            white-space: nowrap;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.267);
+        }
+        .top p.active {
+            background-color: #000;
+            color: #fff;
+        }
+        .right-logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .right-logo > svg {
+            width: 40px; 
+            height: 40px;
+            padding: 0 15px;
+            background: #cccccc05;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-top">
+        <div class="top">
+            <div class="top-child">
+                <p class="active">All</p>
+                <p>Music</p>
+                <p>Chinese Movies</p>
+                <p>Film Criticisms</p>
+                <p>Playlists</p>
+                <p>Mixes</p>
+                <p>Computer Programming</p>
+                <p>Gaming</p>
+                <p>Live</p>
+                <p>Study Skills</p>
+                <p>Algorithms</p>
+                <p>More</p>
+                <p>Study Skills</p>
+                <p>Algorithms</p>
+                <p>More</p>
+            </div>
+
+            <div class="right-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" viewBox="0 0 24 24">
+                    <path fill="none" stroke="black" stroke-width="2" d="m7 2l10 10L7 22" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

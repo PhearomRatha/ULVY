@@ -1,0 +1,41 @@
+*{
+         font-family: Arial,sans-serif;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;  
+}
+section{
+    width: 12.5%;
+}
+section:hover > ul{
+    cursor: pointer;
+    display: block;
+    background-color: aqua;
+    color: aliceblue;
+}
+h1{
+    width: 100%;
+    color: aliceblue;
+    background-color: black;
+}
+ul{
+    display: none;
+    width: 100%;
+    animation: showDropdown 1s forwards ease-in-out;
+}
+li{
+    padding: 10px 20px;
+    border-bottom: 2px solid #fff;
+}
+@keyframes showDropdown {
+    from{
+        height: 0;
+        opacity: 0;
+    }
+    to{
+        height: 20vh;
+        opacity: 1;
+     
+    }
+    
+}

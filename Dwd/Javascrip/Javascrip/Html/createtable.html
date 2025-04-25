@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Table with JavaScript</title>
+    <script defer src="../JS/createtable.js"></script>
+    <style>
+        table {
+            margin: auto;
+            width: 75%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #00264d;
+            color: white;
+        }
+        tr:nth-child(even){
+            background-color: rgba(64, 63, 66, 0.252);
+        }
+        tr:nth-child(odd){
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+            </tr>
+           
+        </thead>
+        <tbody>
+            <tr>
+                <td>document</td>
+                <td>document</td>
+            </tr>
+            <tr>
+                <td>document</td>
+                <td>document</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>
